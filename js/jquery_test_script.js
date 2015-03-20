@@ -8,8 +8,4 @@
 */
 
 $(document).ready(function(){
-	$('#celebs tbody tr:even').css({
-		'background-color':'blue',
-		'color':'white'
-		});
-});
+	$('#celebs tbody tr:even').addClass('.even_colors')
