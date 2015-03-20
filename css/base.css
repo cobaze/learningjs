@@ -79,3 +79,8 @@ td {
 	padding: 6px;
 }
 
+.even_colors{
+	background-color: blue;
+	color: white;
+}
+
