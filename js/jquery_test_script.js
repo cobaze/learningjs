@@ -8,4 +8,5 @@
 */
 
 $(document).ready(function(){
-	$('#celebs tbody tr:even').addClass('.even_colors')
+	$('#celebs tbody tr:even').addClass('.even_colors');
+});
