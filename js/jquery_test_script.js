@@ -115,11 +115,11 @@ $(document).ready(function(){
 	$('<input>', {
 		id: 'footerButton',
 		type: 'button',
-		value: 'Show/Hide'
+		value: 'Show/Hide',
 		click: function(){
 			$('#fine_print').toggle();
 			
-			if('#fine_print').is(':visible'){
+			if($('#fine_print').is(':visible')){
 				$('#fine_print').val('Hide');
 			}else{
 				$('#fine_print').val('Show');
