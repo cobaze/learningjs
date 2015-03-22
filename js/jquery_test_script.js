@@ -5,7 +5,16 @@
 	alert($('#celebs tbody tr').length + ' elements!');
 });
 
+This example is for selecting and determining what parameters an element posseses
+
+$(function(){
+	var fontColor = $('#navigation ul li a').css('font-size');
+	
+	alert(fontColor);
+});
+
 */
+
 
 /*
 	These are examples is for adding class
@@ -103,10 +112,21 @@ $(document).ready(function(){
 */
 
 $(document).ready(function(){
-	alert($('#container h1').length + ' elements!');
+	$('<input>', {
+		id: 'footerButton',
+		type: 'button',
+		value: 'Show/Hide'
+		click: function(){
+			$('#fine_print').toggle();
+			
+			if('#fine_print').is(':visible'){
+				$('#fine_print').val('Hide');
+			}else{
+				$('#fine_print').val('Show');
+			}
+		}
+	}).insertBefore('#fine_print');
 });
-
-
 
 
 
