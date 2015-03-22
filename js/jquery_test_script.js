@@ -120,9 +120,9 @@ $(document).ready(function(){
 			$('#fine_print').toggle();
 			
 			if($('#fine_print').is(':visible')){
-				$('#fine_print').val('Hide');
+				$('this').val('Hide');
 			}else{
-				$('#fine_print').val('Show');
+				$('this').val('Show');
 			}
 		}
 	}).insertBefore('#fine_print');
