@@ -112,20 +112,15 @@ $(document).ready(function(){
 */
 
 $(document).ready(function(){
-	$('<input>', {
-		id: 'footerButton',
+	
+	$('<input>',{
 		type: 'button',
-		value: 'Show/Hide',
+		id: 'fine_button',
+		value: 'show',
 		click: function(){
-			$('#fine_print').toggle();
-			
-			if($('#fine_print').is(':visible')){
-				$('this').val('Hide');
-			}else{
-				$('this').val('Show');
-			}
+			$('#fine_art').show();
 		}
-	}).insertBefore('#fine_print');
+	}).insertAfter('#fine_art');
 });
 
 
