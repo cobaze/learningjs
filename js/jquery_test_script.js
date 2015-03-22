@@ -103,7 +103,7 @@ $(document).ready(function(){
 */
 
 $(document).ready(function(){
-	alert('test');
+	alert($('p#fineprint').length + ' elements!');
 });
 
 
