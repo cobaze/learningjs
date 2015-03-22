@@ -103,7 +103,7 @@ $(document).ready(function(){
 */
 
 $(document).ready(function(){
-	alert($('#container h2').length + ' elements!');
+	alert($('#container #').length + ' elements!');
 });
 
 
