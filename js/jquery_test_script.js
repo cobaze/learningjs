@@ -113,18 +113,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	
-	$('<input>',{
-		type: 'button',
-		id: 'fine_button',
-		value: 'show',
-		click: function(){
-			$('#fine_art').show();
-		}
-	}).insertAfter('#fine_art');
 });
-
-
-
 
 
 
