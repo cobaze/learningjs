@@ -112,9 +112,13 @@ $(document).ready(function(){
 */
 
 $(document).ready(function(){
-	$('#disclaimer').animate({
-		'backgroundColor':'#ff9f5f'
-	}, 2000)
+	$('p:first').toggle(function(){
+		$(this).animate({
+			'height':'+=150px'}, 2000, 'linear');
+	}, function(){
+		$(this).animate({
+			'height':'-=150px'}, 2000, 'swing');
+	})
 
 });
 
