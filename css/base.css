@@ -79,8 +79,12 @@ td {
 	padding: 6px;
 }
 
-tr.even_colors{
+.even_colors{
 	background-color: blue;
 	color: white;
+}
+
+.more_colors{
+	text-decoration: underline;
 }
 
