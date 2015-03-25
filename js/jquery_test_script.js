@@ -112,9 +112,7 @@ $(document).ready(function(){
 */
 
 $(document).ready(function(){
-	$('#disclaimer').toggle(function(){
-		$(this).animate('backgroundColor':'#2F48FF');
-	})
+	$('#disclaimer').animate({'backgroundColor':'#2F48FF'});
 });
 
 
