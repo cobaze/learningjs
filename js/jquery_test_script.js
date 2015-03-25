@@ -115,13 +115,7 @@ $('#disclaimer').animate({'height':'-=150px'}, 2000, 'easeInOutExpo');
 */
 
 $(document).ready(function(){
-	$('#disclaimer').click(function(){
-		$('#disclaimer').animate({'height':'+=150px'}, 2000, 'easeOutBounce');
-		$('#disclaimer').animate({'height':'-=150px'}, 2000, 'easeInOutExpo');
-		$('#disclaimer').animate({'height':'hide'}, 2000, 'easeOutCirc');
-		$('#disclaimer').animate({'height':'show'}, 2000, 'easeOutElastic');
-		$('#disclaimer').css('border','solid red 1px');
-	});	
+	
 });
 
 
