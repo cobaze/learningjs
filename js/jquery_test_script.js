@@ -5,7 +5,16 @@
 	alert($('#celebs tbody tr').length + ' elements!');
 });
 
+This example is for selecting and determining what parameters an element posseses
+
+$(function(){
+	var fontColor = $('#navigation ul li a').css('font-size');
+	
+	alert(fontColor);
+});
+
 */
+
 
 /*
 	These are examples is for adding class
@@ -100,14 +109,17 @@ $(document).ready(function(){
 		}
 	}).insertBefore('#disclaimer');
 });
+
+$('#disclaimer').animate({'height':'+=150px'}, 2000, 'easeOutBounce');
+$('#disclaimer').animate({'height':'-=150px'}, 2000, 'easeInOutExpo');
 */
 
 
-
-
-
-
-
+$(document).ready(function(){
+		var saySomething = function(message){
+			console.log(message);
+		}
+});
 
 
 
