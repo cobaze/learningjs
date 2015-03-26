@@ -123,10 +123,10 @@ $(document).ready(function(){
 			value: 'ANSWER',
 			type: 'button',
 			click: function(){
-				$(this).hide();
-				$(this).next().fadeIn();
-			}
-		}).insertAfter('.spoiler');
+				if($('#disclaimer').is(':visible')){
+					$(this).animate({'height':'+=150px'}, 2000, 'swing');
+				}else
+		}).insertBefore('#disclaimer');
 });
 
 
