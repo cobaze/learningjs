@@ -116,9 +116,7 @@ $('#disclaimer').animate({'height':'-=150px'}, 2000, 'easeInOutExpo');
 
 
 $(document).ready(function(){
-		var saySomething = function(message){
-			console.log(message);
-		}
+		
 });
 
 
