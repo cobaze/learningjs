@@ -124,7 +124,7 @@ $(document).ready(function(){
 			type: 'button',
 			click: function(){
 				$(this).hide();
-				$$(this).next().fadeIn();
+				$(this).next().fadeIn();
 			}
 		}).insertAfter('.spoiler');
 });
