@@ -116,7 +116,11 @@ $('#disclaimer').animate({'height':'-=150px'}, 2000, 'easeInOutExpo');
 
 
 $(document).ready(function(){
-	$('.data tbody tr').remove(':contains("singer")');
+	$('p:first').toggle(function()({
+		$(this).animate({'height','+=150'}, 2000, 'linear');
+	}, function(){
+		$(this).animate({'height','-=150'}, 2000, 'swing');
+	});
 });
 
 
