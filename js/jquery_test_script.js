@@ -114,8 +114,13 @@ $('#disclaimer').animate({'height':'+=150px'}, 2000, 'easeOutBounce');
 $('#disclaimer').animate({'height':'-=150px'}, 2000, 'easeInOutExpo');
 */
 
+
 $(document).ready(function(){
-	
+		$('p:first')
+		.hide()
+		.slideDown('slow')
+		.delay(2000)
+		.fadeOut();		
 });
 
 
