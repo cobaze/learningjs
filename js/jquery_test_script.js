@@ -180,7 +180,7 @@ $(document).ready(function(){
 		click: function(){
 			$('#disclaimer').animate({
 				height: 
-			}, function{
+			}, function{h
 				
 			})
 			}
