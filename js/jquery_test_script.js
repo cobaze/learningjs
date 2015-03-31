@@ -142,15 +142,51 @@ $('#navigation a').hover(function(){
 	});
 */
 
+/*
+//styling a nav with hover
 $(document).ready(function(){
 	$('<div id="navigation_blob"></div>').css({
 		width:0,
 		height: $('#navigation li:first a').height() + 10
 	}).appendTo('#navigation');
 	
-	$('#navigation a').css({})
+	$('#navigation a').hover(function(){
+		$('#navigation_blob').animate({
+			width: $(this).width() + 10,
+			left:$(this).position().left
+		},{
+			duration: 'slow',
+			easing: 'easeOutCirc',
+			queue: false
+		})
+	}, function(){
+		$('#navigation_blob').animate({
+			width: $(this).width() + 10,
+			left:$(this).position().left
+		},{
+			duration: 'slow',
+			easing: 'easeOutCirc',
+			queue: false
+		})
+		
+	});
 
+});*/
+$(document).ready(function(){
+	$('<input>',{
+		class: 'tester',
+		type: 'button',
+		value: 'Hide',
+		click: function(){
+			$('#disclaimer').animate({
+				height: 
+			}, function{
+				
+			})
+			}
+	}).insertBefore('#disclaimer');
 });
+
 
 
 
