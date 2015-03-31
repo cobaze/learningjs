@@ -117,20 +117,39 @@ $('#disclaimer').animate({'height':'-=150px'}, 2000, 'easeInOutExpo');
 /*
 $('#disclaimer').animate({'height':'+=150px'}, 2000, 'easeOutBounce');
 $('#disclaimer').animate({'height':'-=150px'}, 2000, 'easeInOutExpo');
+
+$('#navigation a').hover(function(){
+		$('#navigation_blob').animate({
+			'width': $(this).width() + 10,
+			'left': $(this).position().left
+		},{
+			duration: 'slow',
+			easing: 'easeOutCirc',
+			queue: false
+		});
+	}, function(){
+		$('#navigation_blob').animate({
+			'width': $(this).width() + 10,
+			'left': $(this).position().left
+		},{
+			duration: 'slow',
+			easing: 'easeOutCirc',
+			queue: false
+		});
+		.animate({
+			left: $('#navigate li:first a').position().left
+		}, 'fast');
+	});
 */
 
 $(document).ready(function(){
-		$('p:first').animate({
-			'height':'+=20px',
-			'line-height':'10px'
-		},
-		{
-			duration:'slow',
-			eeasing:'swing',
-			complete:function(){alert('DONE')},
-			queue: false
-		}
-		);
+	$('<div id="navigation_blob"></div>').css({
+		width:0,
+		height: $('#navigation li:first a').height() + 10
+	}).appendTo('#navigation');
+	
+	$('#navigation a').css({})
+
 });
 
 
