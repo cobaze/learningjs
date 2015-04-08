@@ -172,21 +172,13 @@ $(document).ready(function(){
 	});
 
 });*/
-$(document).ready(function(){
-	$('<input>',{
-		class: 'tester',
-		type: 'button',
-		value: 'Hide',
-		click: function(){
-			$('#disclaimer').animate({
-				height: 
-			}, function{h
-				
-			})
-			}
-	}).insertBefore('#disclaimer');
-});
 
+$(document).ready(function(){
+	$('<div id="wow"></div>').insertAfter('#navigation').css({
+		border:'solid red 1px', 
+		width: $('#navigation a').width();
+		});
+});
 
 
 
